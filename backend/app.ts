@@ -22,12 +22,8 @@ app.get('/', (req: Request, res: Response) => {
     'Date & Time': new Date().toLocaleString()
   })
 })
+
 app.use('/api/auth', authRoutes);
 app.use('/api/challenges', challengeRoutes);
-
-// Error handling for unknown routes
-app.use((req, res) => {
-  res.status(404).json({ message: 'Route not found' });
-});
 
 export default app;
