@@ -8,6 +8,7 @@ interface IChallenge {
     startDate: string;
     endDate: string;
     frequency: 'daily' | 'weekly';
+    userId: string;
 }
 
 interface ChallengeModalProps {
@@ -47,7 +48,7 @@ const ChallengeModal: React.FC<ChallengeModalProps> = ({ isOpen, onClose, onSave
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const newChallenge: IChallenge = { title, description, startDate, endDate, frequency };
+        const newChallenge: IChallenge = { title, description, startDate, endDate, frequency, userId: '' };
         onSave(newChallenge);
         resetForm();
         onClose();

@@ -35,7 +35,7 @@ const Challenges: React.FC = () => {
         fetchChallenges();
     }, [fetchChallenges]);
 
-    const handleSaveChallenge = useCallback(async (challenge: IChallenge) => {
+    const handleSaveChallenge = useCallback(async (challenge: IChallenge): Promise<void> => {
         try {
             if (challengeToEdit) {
                 await updateChallenge(challengeToEdit._id!, challenge);
