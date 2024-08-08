@@ -1,9 +1,7 @@
 import '../styles/Home.css';
 import Banner from '../assets/Banner.jpeg';
 
-type Props = {}
-
-const Home = (props: Props) => {
+const Home = () => {
     return (
         <div className='home' id='home'>
             <img src={Banner} alt="banner" className='banner' />

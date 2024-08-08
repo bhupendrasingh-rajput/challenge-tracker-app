@@ -1,7 +1,4 @@
-import React from 'react';
 import '../styles/Stories.css';
-
-type Props = {}
 
 const storiesData = [
   {
@@ -30,7 +27,7 @@ const storiesData = [
   }
 ];
 
-const Stories = (props: Props) => {
+const Stories = () => {
   return (
     <div className="stories-container" id='stories'>
       <h1>Success Stories</h1>

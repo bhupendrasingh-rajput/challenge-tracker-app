@@ -1,9 +1,6 @@
-import React from 'react';
 import '../styles/Features.css'
 
-type Props = {}
-
-const Features = (props: Props) => {
+const Features = () => {
   const features = [
     {
       title: 'Seamless Collaboration',
