@@ -1,0 +1,29 @@
+.home {
+    height: 90vh;
+    width: 100%;
+    padding: 2vh 2vw;
+    position: relative;
+}
+
+.banner {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.2);
+}
+
+.bannerInfo {
+    color: gray;
+    position: absolute;
+    top: 0vh;
+    height: 100%;
+    width: 50%;
+    padding: 20vh 10vw;
+
+}
+
+.bannerInfo p {
+    text-align: justify;
+    margin-top: 2vh;
+}

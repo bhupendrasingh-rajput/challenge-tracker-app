@@ -1,0 +1,60 @@
+.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.441) 0px 1px 2px 0px;
+}
+
+.brand {
+    background-color: orange;
+    height: 7vh;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 4vh;
+    color: white;
+}
+
+
+.nav {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.055);
+    height: 5vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.auth {
+    display: flex;
+    column-gap: 2vw;
+    align-items: center;
+    font-size: 2vh;
+}
+
+.authbtn {
+    height: 5vh;
+    background-color: orange;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    padding-inline: 1vw;
+    cursor: pointer;
+}
+
+.authName {
+    font-weight: 600;
+    color: gray;
+}
